@@ -9,8 +9,8 @@ sm3 <- as.numeric(subdata$Sub_metering_3)
 grp <- as.numeric(subdata$Global_reactive_power)
 voltage <- as.numeric(subdata$Voltage)
 
-par(mfrow = c(2, 2))
 png("plot4.png",480,480)
+par(mfrow = c(2, 2))
 plot(x=time, y=gap, type="l", xlab="", ylab="Global Active Power")
 
 plot(x=time, y=voltage, type="l", xlab="datetime", ylab="Voltage")
